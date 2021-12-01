@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package Api;
+
+message ApiKey {
+  string version = 1;
+  bytes keyId = 2;
+  bytes cipherText = 3;
+  bytes iv = 4;
+}

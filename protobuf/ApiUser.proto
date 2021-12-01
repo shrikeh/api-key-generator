@@ -1,0 +1,12 @@
+syntax "proto3";
+
+package Api;
+
+import "google/protobuf/timestamp.proto";
+
+message ApiUser {
+  string issuer = 1;
+  string subject = 2;
+  Timestamp issuedAt = 3;
+  Timestamp expiry = 4;
+}
